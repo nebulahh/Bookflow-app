@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./_ForgetPassword.css";
+import Header from "../../components/header/Header";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState("");
@@ -26,6 +27,7 @@ const ForgetPassword = () => {
 
   return (
     <div className="forget-password-container">
+      <Header showLoginLink={false} />
       <div className="forget-password-form">
         {step === 1 && (
           <form onSubmit={handleStep1Submit}>

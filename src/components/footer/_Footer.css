@@ -8,6 +8,10 @@
 	align-items: center;
 }
 
+.footer-logo {
+	text-decoration: none;
+}
+
 .socialIconsContainer {
 	margin-top: 1rem;
 	border-top: 1px solid white;

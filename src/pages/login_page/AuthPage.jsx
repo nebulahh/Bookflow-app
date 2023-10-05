@@ -1,11 +1,8 @@
 /* eslint-disable multiline-ternary */
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import LoginIcon from "@mui/icons-material/Login";
@@ -19,6 +16,7 @@ import TimedPopup from "../../components/timedpopup/TimedPopup";
 import "./_AuthPage.css";
 import axios from "axios";
 import "./ForgetPassword";
+import Header from "../../components/header/Header";
 
 const AuthPage = () => {
   const navigate = useNavigate();
@@ -230,22 +228,7 @@ const AuthPage = () => {
   return (
     <>
       <div className="bodyNoMarginPadding">
-        <AppBar className="appBar">
-          <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="back"
-              component={Link}
-              to="/"
-            >
-              <ArrowBackIcon />
-            </IconButton>
-            <Typography variant="h6" style={{ flexGrow: 1, marginLeft: 10 }}>
-              Authentication
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <Header showLoginLink={false}/>
         <div className="authPageContainer">
           <div className="formContainer">
             <div className="formHeader">

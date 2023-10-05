@@ -32,7 +32,7 @@ function Footer () {
           </div>
           <div className="column">
             <Typography variant="h3" className="logo">
-              BookFlow
+              <a className="footer-logo" href="/">BookFlow</a>
             </Typography>
           </div>
         </div>

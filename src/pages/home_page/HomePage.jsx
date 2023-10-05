@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./header/Header";
 import "./_HomePage.css";
 import background1 from "../../images/background.jpg";
 import testimonialbg from "../../images/new3.png";
@@ -7,6 +6,7 @@ import quote from "../../images/quote.png";
 import img1 from "../../images/vector1.png";
 import img2 from "../../images/vector2.png";
 import img3 from "../../images/vector5.png";
+import Header from "../../components/header/Header";
 
 const HomePage = () => {
   const testimonials = [
@@ -25,7 +25,7 @@ const HomePage = () => {
   ];
   return (
     <div className="root">
-      <Header />
+      <Header showLoginLink={true} />
       <div className="page">
         <section
           className="section"
